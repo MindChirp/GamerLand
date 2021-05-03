@@ -1,0 +1,139 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+}
+
+:root {
+    --color-one: #8d8741;
+    --color-two: #659DBD;
+    --color-three: #DAAD86;
+    --color-four: #BC986A;
+    --color-five: #FBEEC1;
+}
+
+
+#top {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-two);
+    position: relative;
+}
+
+#top .title {
+}
+
+#top > .content { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#top .title p::before {
+    content: "Velkommen til";
+    color: white;
+    position: absolute;
+    top: -1rem;
+    font-size: 0.5rem;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid white;
+    border-width: 0 0 1px 0;
+}
+#top .title p {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#top > .content .button-wrapper button {
+    
+}
+
+#top > .content .button-wrapper {
+    margin: auto;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+#top > .content > .body {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#top > .content > .body p {
+    margin: 0;
+    color: rgb(220,220,220);
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    z-index: 2;
+}
+
+#header .right {
+    float: right;
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+.button.fd-design {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-one);
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+
+.button.outline {
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.button.white {
+    background-color: white;
+    color: var(--color-two);
+}
+
+.button.rounded {
+    border-radius: 10rem;
+}
+
+.smooth-shadow {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
